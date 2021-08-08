@@ -20,6 +20,23 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		//  echo 2+3;
+		//$this->load->view('welcome_message');
+	}
+	public function sum($a,$b)
+	{
+		 echo $a + $b;
+		 echo "<br>";
+		 echo "<em>This function takes 2 parameters and returns the sum.</em>";
+		//  echo "<br>";
+		//  echo "<code>Hi, Welcome to codeigniter</code>";
+		//$this->load->view('welcome_message');
+	}
+	public function sub($a,$b)
+	{
+		 echo $a - $b;
+		 echo "<br>";
+		 echo "This function takes 2 parameters and returns the sum.";
+		//$this->load->view('welcome_message');
 	}
 }
